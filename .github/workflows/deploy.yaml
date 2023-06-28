@@ -6,6 +6,9 @@ on:
         working-directory:
             required: true
             type: string
+        terraform-module:
+            required: false
+            type: string
 #   schedule:
 #     # Every day from Monday to Friday at 03:30 AM UTC
 #     - cron: '30 3 * * 1-5'

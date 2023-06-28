@@ -8,10 +8,14 @@ terraform {
   }
 }
 
+  backend "azurerm" {
+    resource_group_name  = "iac"
+    storage_account_name = "caj1rlztfstate"
+    container_name       = "terraform-state"
+    key                  = "terraform.tfstate"
+  }
+}
+
 provider "azurerm" {
   features {}
-  subscription_id = var.subscription_id
-  tenant_id       = var.subscription_tenant_id
-  client_id       = var.service_principal_appid
-  client_secret   = var.service_principal_password
 }

@@ -1,0 +1,24 @@
+name: Pulumi
+on:
+  workflow_dispatch:
+
+jobs:
+  up:
+    name: Preview
+    runs-on: ubuntu-latest
+      
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pulumi/actions@v4
+        with:
+          command: preview
+          work-dir: ./week5/
+          stack-name: dev
+          cloud-url: azblob://state?storage_account=caj1rlzpulumistate
+        env:
+          ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID}}
+          ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID}}
+          ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID}}
+
+          # AZURE_STORAGE_SAS_TOKEN: ${{ secrets.AZURE_STORAGE_SAS_TOKEN }}

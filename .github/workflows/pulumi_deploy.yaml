@@ -13,7 +13,7 @@ jobs:
         with:
           command: preview
           work-dir: week5
-          stack-name: dev
+          stack-name: test
           cloud-url: azblob://state?storage_account=caj1rlzpulumistate
         env:
           ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID}}

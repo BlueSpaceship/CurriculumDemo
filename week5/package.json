@@ -1,0 +1,38 @@
+{
+  "name": "iac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITKmpelaez/cloudCurriculumIaC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ITKmpelaez/cloudCurriculumIaC/issues"
+  },
+  "homepage": "https://github.com/ITKmpelaez/cloudCurriculumIaC#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "2.8.7"
+  },  
+  "dependencies": {
+    "@types/node": "18.15.12",
+    "typescript": "^5.0.4",
+    "@pulumi/pulumi": "3.20.0",
+    "@pulumi/azure-native": "1.95.0"
+
+  }
+}

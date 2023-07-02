@@ -1,0 +1,4 @@
+config:
+  iac-cloudcurriculum:configuration:
+    environment: development
+    resourceGroupName: gam1be-iac-cloudCurriculum

@@ -1,0 +1,1 @@
+## Http triggered Function App that saves POST query parameter in a Cosmos DB

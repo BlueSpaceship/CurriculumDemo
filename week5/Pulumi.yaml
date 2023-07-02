@@ -1,0 +1,4 @@
+name: iac-cloudcurriculum
+runtime: nodejs
+config:
+  azure-native:location: WestEurope

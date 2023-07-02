@@ -17,6 +17,7 @@ jobs:
 
       - name: Installing dependencies
         run: npm install
+        working-directory: week5
 
       - uses: pulumi/actions@v4
         with:

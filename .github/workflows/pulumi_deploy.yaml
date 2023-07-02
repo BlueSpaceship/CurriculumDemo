@@ -12,7 +12,7 @@ jobs:
       - uses: pulumi/actions@v4
         with:
           command: preview
-          work-dir: ./week5/
+          work-dir: week5
           stack-name: dev
           cloud-url: azblob://state?storage_account=caj1rlzpulumistate
         env:

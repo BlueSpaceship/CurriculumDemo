@@ -21,7 +21,7 @@ jobs:
 
       - uses: pulumi/actions@v4
         with:
-          command: preview
+          command: preview --diff --suppress-outputs --config-file config_files/config.yaml
           work-dir: week5
           stack-name: test
           cloud-url: azblob://state?storage_account=caj1rlzpulumistate
